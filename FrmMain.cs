@@ -16,5 +16,18 @@ namespace prySosaPOO
         {
             InitializeComponent();
         }
+
+        private void BtnNombre_Click(object sender, EventArgs e)
+        {
+            ClassPersonaje objeto = new ClassPersonaje();
+
+            objeto.nombre = txtNombre.Text;
+            objeto.fuerza = Convert.ToInt32(txtFuerza.Text);
+            objeto.destreza = int.Parse(txtDestreza.Text);
+
+            lblInfo.Text += objeto.nombre + "\n"+
+                objeto.fuerza + "\n"+
+                objeto.destreza;
+        }
     }
 }
