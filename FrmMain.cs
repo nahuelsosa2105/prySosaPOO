@@ -29,5 +29,10 @@ namespace prySosaPOO
                 objeto.fuerza + "\n"+
                 objeto.destreza;
         }
+
+        private void lblDatos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
